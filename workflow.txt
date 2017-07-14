@@ -1,0 +1,16 @@
+Create S3 Bucket
+|-- Bucket Name
+|-- Region
+|-- Manage Public Permissions (Everyone can read object)
+
+Create ACM Certificate for domain
+
+Create CloudFront for S3
+|-- Redirect HTTP to HTTPS
+|-- Allow GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE methods
+|-- Check to cache OPTIONS method
+|-- Don't forward headers
+|-- Forward all query strings
+|-- Check YES to compress objects automatically
+|-- Enter CDN CNAME
+|-- Choose ACM certificate
